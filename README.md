@@ -1,6 +1,6 @@
 # Vaux Website V3
 
-This draft uses the selected Option A founder image and expands the site into a fuller multi-page experience.
+This revision keeps the selected Option A direction while correcting the homepage portrait scale and placement.
 
 ## Main improvements
 - Real founder photography in the homepage hero
@@ -33,3 +33,12 @@ Replace:
 
 ## Netlify
 Upload all files and the assets folder to GitHub. Netlify requires no build command for this static website.
+
+
+## V3.1 image corrections
+- Homepage founder portrait is no longer used as a full-screen cover image.
+- The portrait is placed center-right at a controlled scale, leaving the same open headline area shown in Option A.
+- The Contact page's unedited portrait was removed and replaced with a dark branded visual panel.
+
+## V3.2 Option A correction
+The homepage now uses the actual Option A-style generated founder/studio composition rather than the raw uploaded portrait. The extracted asset contains no baked-in navigation, headline, buttons, metrics, or signature.
