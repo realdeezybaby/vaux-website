@@ -1,35 +1,35 @@
-# Vaux Website
+# Vaux Website V3
 
-A responsive static website recreated from the supplied Vaux concept image.
+This draft uses the selected Option A founder image and expands the site into a fuller multi-page experience.
 
-## Test locally
+## Main improvements
+- Real founder photography in the homepage hero
+- Three clickable service cards
+- Dedicated pages for Lead Engine, Growth System, and Full Domination
+- Much more detailed Process page
+- Simplified industries
+- Work page ready for real videos and case studies
+- Dedicated About and Contact pages
+- Responsive mobile navigation
+- Video popup support
 
-Open `index.html` in a browser, or run:
+## Important before public launch
+The company names and results displayed on the homepage are demo placeholders. Replace them with verified client names, permission-cleared media, testimonials, and accurate results.
 
-```bash
-python -m http.server 8000
-```
+## Add a video
+Find a card with:
 
-Then visit `http://localhost:8000`.
+`data-video=""`
 
-## Publish with Netlify
+Add either:
+- `assets/video-name.mp4`
+- or an embeddable YouTube/Vimeo URL
 
-1. Create a GitHub repository.
-2. Upload every file and the `assets` folder.
-3. In Netlify, choose **Add new site → Import an existing project**.
-4. Connect GitHub and select the repository.
-5. Leave the build command blank.
-6. Set the publish directory to `/` and deploy.
+## Booking and email
+Replace:
+- `https://calendly.com/`
+- `hello@yourdomain.com`
+- all `#` social links
 
-## Before going live
-
-In `index.html`, replace:
-
-- `https://calendly.com/` with your actual Calendly booking URL.
-- `hello@yourdomain.com` with your business email.
-- Placeholder testimonials and results with verified client information.
-- Founder name or copy as needed.
-
-## Custom domain
-
-Netlify supports a custom domain directly, so Wix or Squarespace is not required unless you specifically want their editor.
+## Netlify
+Upload all files and the assets folder to GitHub. Netlify requires no build command for this static website.
