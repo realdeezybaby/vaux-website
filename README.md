@@ -1,5 +1,9 @@
-# Vaux Option A Website
+# Vaux Option A Exact
 
-Upload all files and the assets folder to GitHub, then connect the repository to Netlify. Leave the build command blank and use / as the publish directory.
+The desktop hero is the exact Option A crop from the approved reference image. Transparent clickable hotspots make the navigation and CTAs functional without altering its appearance.
 
-Before launch, replace the Calendly URL, email, biography placeholder, and all unverified case-study placeholders.
+## Before launch
+Replace Calendly, email, social links, demo company names, and demo results.
+
+## Netlify
+Upload all files and the assets folder to GitHub. Leave build command blank and publish directory as `/`.
