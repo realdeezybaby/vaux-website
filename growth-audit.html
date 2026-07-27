@@ -1,101 +1,69 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Complete the free VAUX Growth Audit and receive a recommended growth path.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070809">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/lucide@latest"></script><link rel="stylesheet" href="styles.css">
-<title>Free Growth Audit — VAUX</title>
-</head>
-<body>
-
-<header class="global-header">
+<link rel="stylesheet" href="styles.css">
+<title>Free Growth Audit — VAUX Media Group</title></head><body>
+<header class="site-header">
   <div class="shell header-inner">
-    <a class="logo" href="index.html">VAUX<span>.</span></a>
-    <nav class="global-nav" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="VAUX home">
+      <span class="brand-word">VAUX</span><span class="brand-dot">.</span>
+      <small>MEDIA GROUP</small>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
       <a href="services.html">Services</a>
+      <a href="work.html">Results</a>
       <a href="process.html">Process</a>
-      <a href="work.html">Work</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <a class="btn header-cta" href="growth-audit.html">Free growth audit</a>
-    <button class="menu" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+    <a class="button button-outline header-button" href="contact.html">Book a call</a>
+    <button class="menu-button" aria-label="Open navigation" aria-expanded="false">Menu</button>
   </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Results</a>
+    <a href="process.html">Process</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    <a href="growth-audit.html">Free growth audit</a>
+  </nav>
 </header>
-
-<main class="audit-page">
-<section class="audit-intro shell">
-  <p class="eyebrow">Free growth audit</p>
-  <h1>Find the biggest opportunity hiding in your marketing.</h1>
-  <p>Five focused questions. A personalized growth score. A recommended VAUX service path.</p>
-</section>
-<section class="audit-shell shell">
-  <div class="audit-top">
-    <div><span class="audit-logo">VAUX<span>.</span></span><small>Growth Audit</small></div>
-    <span id="stepLabel">Step 1 of 5</span>
-  </div>
-  <div class="audit-progress"><span id="progressFill"></span></div>
-
-  <div id="auditBody">
-    <section class="audit-step" data-step="1">
-      <p class="eyebrow">Business profile</p><h2>What industry are you in?</h2><p>Choose the closest match.</p>
-      <div class="audit-choices two-col">
-        <button data-value="Contractor">Contractor</button><button data-value="Barbershop">Barbershop</button>
-        <button data-value="Real Estate">Real estate</button><button data-value="E-commerce">E-commerce</button>
-        <button data-value="Other">Other</button>
-      </div>
-    </section>
-    <section class="audit-step hidden" data-step="2">
-      <p class="eyebrow">Main bottleneck</p><h2>What is holding back growth?</h2><p>Pick the issue creating the most pressure.</p>
-      <div class="audit-choices">
-        <button data-value="Need more leads">Need more leads</button><button data-value="Low lead quality">Leads are not qualified</button>
-        <button data-value="Weak content">Need better content</button><button data-value="Ads not converting">Ads are not converting</button>
-        <button data-value="No system">Need a complete marketing system</button>
-      </div>
-    </section>
-    <section class="audit-step hidden" data-step="3">
-      <p class="eyebrow">Business size</p><h2>What is your monthly revenue?</h2><p>This helps us recommend a realistic service level.</p>
-      <div class="audit-choices two-col">
-        <button data-value="Under $10k" data-score="8">Under $10,000</button><button data-value="$10k–$25k" data-score="14">$10,000–$25,000</button>
-        <button data-value="$25k–$50k" data-score="20">$25,000–$50,000</button><button data-value="$50k–$100k" data-score="26">$50,000–$100,000</button>
-        <button data-value="$100k+" data-score="32">$100,000+</button>
-      </div>
-    </section>
-    <section class="audit-step hidden" data-step="4">
-      <p class="eyebrow">Current marketing</p><h2>What are you using now?</h2><p>Select everything currently active.</p>
-      <div class="audit-checks two-col">
-        <label><input type="checkbox" value="Facebook Ads">Facebook Ads</label><label><input type="checkbox" value="Google Ads">Google Ads</label>
-        <label><input type="checkbox" value="Organic Social">Organic social</label><label><input type="checkbox" value="Website">Website</label>
-        <label><input type="checkbox" value="CRM">CRM or automated follow-up</label><label><input type="checkbox" value="Referrals Only">Mostly referrals</label>
-      </div>
-    </section>
-    <section class="audit-step hidden" data-step="5">
-      <p class="eyebrow">Growth target</p><h2>Where do you want to be in 12 months?</h2><p>Give us the clearest version of your goal.</p>
-      <textarea id="goal" rows="6" placeholder="Example: Increase monthly revenue from $25,000 to $50,000 and build a steady flow of qualified leads."></textarea>
-    </section>
-  </div>
-
-  <div id="auditNav" class="audit-nav">
-    <button id="backBtn" class="btn hidden">Back</button>
-    <button id="nextBtn" class="btn gold">Continue</button>
-  </div>
-
-  <div id="auditLoading" class="audit-loading hidden" aria-live="polite">
-    <div class="audit-spinner"></div><h2>Building your growth profile</h2><p id="loadingText">Reviewing your answers...</p>
-  </div>
-
-  <div id="auditResult" class="audit-result hidden">
-    <div class="score-wrap"><div id="scoreRing" class="score-ring"><div><b id="scoreValue">72</b><span>out of 100</span></div></div>
-      <div><p class="eyebrow">Your VAUX Growth Score</p><h2 id="resultHeadline">Strong foundation. Missing a system.</h2><p id="resultSummary">Your current marketing has potential, but the pieces are not yet operating as one connected system.</p></div>
+<main>
+<section class="audit-page">
+<div class="shell audit-layout">
+  <aside class="audit-sidebar"><p class="eyebrow">VAUX Growth Audit</p><h1>Get your free<br><em>Growth Score.</em></h1><p>Answer five focused questions. Receive a personalized score, likely opportunities, and a recommended starting point.</p><div class="audit-benefits"><span>✓ Takes about two minutes</span><span>✓ No payment required</span><span>✓ Recommendation before booking</span></div></aside>
+  <section class="audit-card">
+    <div class="audit-card-top"><span id="auditStatus">Step 1 of 5</span><div class="audit-dots"><i class="active"></i><i></i><i></i><i></i><i></i></div></div>
+    <div class="audit-progress"><span id="auditProgress"></span></div>
+    <div id="auditQuestions">
+      <div class="question active" data-step="1"><p class="eyebrow">Business profile</p><h2>What best describes your business?</h2><div class="choices"><button data-value="Local service business">Local service business</button><button data-value="E-commerce brand">E-commerce brand</button><button data-value="Personal brand">Personal brand / creator</button><button data-value="Other">Other</button></div></div>
+      <div class="question" data-step="2"><p class="eyebrow">Primary constraint</p><h2>What is the biggest growth bottleneck?</h2><div class="choices"><button data-value="Need more leads">Need more leads</button><button data-value="Weak brand">Brand does not feel established</button><button data-value="Low conversion">Leads are not converting</button><button data-value="No system">Marketing feels inconsistent</button></div></div>
+      <div class="question" data-step="3"><p class="eyebrow">Business stage</p><h2>What is your approximate monthly revenue?</h2><div class="choices"><button data-value="Under $10k" data-score="5">Under $10,000</button><button data-value="$10k–$25k" data-score="12">$10,000–$25,000</button><button data-value="$25k–$50k" data-score="19">$25,000–$50,000</button><button data-value="$50k–$100k" data-score="26">$50,000–$100,000</button><button data-value="$100k+" data-score="32">$100,000+</button></div></div>
+      <div class="question" data-step="4"><p class="eyebrow">Current marketing</p><h2>Which systems are currently active?</h2><div class="checks"><label><input type="checkbox" value="Paid Ads">Paid ads</label><label><input type="checkbox" value="Consistent Content">Consistent content</label><label><input type="checkbox" value="Website">Professional website</label><label><input type="checkbox" value="CRM">CRM or follow-up automation</label><label><input type="checkbox" value="Reporting">Reliable reporting</label></div></div>
+      <div class="question" data-step="5"><p class="eyebrow">Growth target</p><h2>What would meaningful growth look like over the next 12 months?</h2><textarea id="auditGoal" rows="6" placeholder="Example: Build a consistent flow of qualified leads and grow monthly revenue from $25,000 to $50,000."></textarea></div>
     </div>
-    <div class="audit-result-grid"><article><small>Strongest signal</small><p id="strengthText"></p></article><article><small>Biggest opportunity</small><p id="opportunityText"></p></article></div>
-    <div class="recommendation"><div><small>Recommended package</small><h3 id="packageName">Growth System</h3><p id="packageReason"></p></div><a class="btn gold" href="contact.html">Schedule a strategy call →</a></div>
-    <button id="restartBtn" class="btn">Retake audit</button>
-  </div>
-</section>
+    <div id="auditControls" class="audit-controls"><button id="auditBack" class="button button-outline hidden" type="button">Back</button><button id="auditNext" class="button button-gold" type="button">Next question →</button></div>
+    <div id="auditLoading" class="audit-loading hidden"><div class="spinner"></div><h2>Building your growth profile.</h2><p id="loadingMessage">Reviewing your answers…</p></div>
+    <div id="auditResult" class="audit-result hidden">
+      <div class="score-layout"><div id="scoreRing" class="score-ring"><div><b id="scoreNumber">78</b><small>/100</small></div></div><div><p class="eyebrow">Your growth score</p><h2 id="scoreHeadline">Strong foundation.<br><em>Big opportunities.</em></h2><p id="scoreCopy">You are doing many things right. A connected system could unlock the next stage of growth.</p></div></div>
+      <div class="opportunity-list"><small>Top opportunities</small><span id="oppOne">Improve acquisition consistency</span><span id="oppTwo">Strengthen conversion follow-up</span><span id="oppThree">Connect reporting to revenue</span></div>
+      <div class="recommend-box"><div><small>Recommended starting point</small><h3 id="recommendation">Growth System</h3></div><a class="button button-gold" href="contact.html">Book strategy call →</a></div>
+      <button id="auditRestart" class="text-button" type="button">Retake audit</button>
+    </div>
+  </section>
+</div></section>
 </main>
-<footer><div class="shell footer-inner"><a class="logo" href="index.html">vaux<span>.</span></a><p>© <span id="year"></span> Vaux Media Group. All rights reserved.</p></div></footer>
-<script src="script.js"></script><script src="audit.js"></script>
-</body></html>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html"><span class="brand-word">VAUX</span><span class="brand-dot">.</span><small>MEDIA GROUP</small></a>
+      <p>Strategy, content, paid media, and systems built to create measurable growth.</p>
+    </div>
+    <div><small>Navigate</small><a href="services.html">Services</a><a href="work.html">Results</a><a href="process.html">Process</a><a href="about.html">About</a></div>
+    <div><small>Start</small><a href="growth-audit.html">Free Growth Audit</a><a href="contact.html">Book a Strategy Call</a><a href="mailto:hello@vauxmedia.com">hello@vauxmedia.com</a></div>
+  </div>
+  <div class="shell footer-bottom"><span>© <span data-year></span> Vaux Media Group.</span><span>Built for clarity. Designed for growth.</span></div>
+</footer>
+<script src="script.js"></script><script src="audit.js"></script></body></html>

@@ -1,15 +1,23 @@
-# Vaux Option A Exact
+# VAUX Production Site
 
-The desktop hero is the exact Option A crop from the approved reference image. Transparent clickable hotspots make the navigation and CTAs functional without altering its appearance.
+## Publish on Netlify
+1. Sign in to Netlify.
+2. Open Sites and choose **Add new site → Deploy manually**.
+3. Drag the ZIP file into the upload area.
+4. Netlify will publish the static site and provide a temporary URL.
+5. Add a custom domain later under Domain management.
 
-## Before launch
-Replace Calendly, email, social links, demo company names, and demo results.
+## Before outreach
+- The four case studies and metrics are demonstration placeholders.
+- Replace them with verified client names, imagery, and results before representing them as real.
+- Replace `hello@vauxmedia.com` if that inbox is not active.
+- Add a scheduling link to the contact page when ready.
 
-## Netlify
-Upload all files and the assets folder to GitHub. Leave build command blank and publish directory as `/`.
+## Editing photos
+Replace:
+- `assets/founder-serious.jpg` for the homepage
+- `assets/founder-smiling.jpg` for the About section
 
+Keep the same filenames and redeploy.
 
-## Growth Audit integration
-The free Growth Audit is intentionally not a main navigation item. It is reached from high-intent calls to action after the visitor has seen VAUX's positioning, services, and proof.
-
-Replace all demo case studies and results with verified client information before launch.
+See `BRAND-GUIDE.md` for the VAUX visual system.
